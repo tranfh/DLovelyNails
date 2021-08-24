@@ -16,8 +16,59 @@
     margin-top: 8px;
 }
 
+.landing {
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+.slogan {
+    font: 'Raleway' sans-serif;
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    transform: translateX(-20%);
+    font-size: 3.5em;
+}
+
+.name {
+    right: 20%;
+    transform: translateX(-20%);
+    font: 'Raleway' sans-serif;
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 4.5em;
+}
+
+.landing-pic {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 1000px) {
+    .name {
+        right: 10%;
+        transform: translateX(-20%);
+        font-size: 2.5em;
+    }
+    .slogan {
+        right: 31%;
+        transform: translateX(-20%);
+        font-size: 2em;
+        top: 55%;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .flex-column {
@@ -35,5 +86,30 @@
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+    }
+    .name {
+        right: 10%;
+        transform: translateX(-20%);
+        font-size: 2em;
+    }
+    .slogan {
+        right: 31%;
+        transform: translateX(-20%);
+        font-size: 1.5em;
+        top: 55%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .name {
+        right: 5%;
+        transform: translateX(-20%);
+        font-size: 1em;
+    }
+    .slogan {
+        right: 41%;
+        transform: translateX(-20%);
+        font-size: .5em;
+        top: 55%;
     }
 }
